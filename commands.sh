@@ -26,6 +26,7 @@ bundle install
 
 # Edit config/routes.rb, make a root mapping
 vim config/routes.rb
+vim app/controllers/application_controller.rb # Or wherever you're putting your default route
 rake db:create
 
 # Necessary for heroku
@@ -35,3 +36,4 @@ git commit
 heroku apps:create fit-workshop
 heroku addons:add heroku-postgresql:dev
 git push heroku master
+heroku apps:open
