@@ -21,4 +21,4 @@ ruby '1.9.3'
 gem 'pg', :group => :production
 gem 'carrierwave'
 gem 'fog'
-#gem 'rmagick'
+gem 'rmagick'
