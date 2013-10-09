@@ -24,6 +24,10 @@ rails new .
 #     gem 'pg', :group => :production
 bundle install
 
+# Edit config/routes.rb, uncomment root mapping
+vim config/routes.rb
+rake db:create
+
 # Necessary for heroku
 git add .
 git commit
