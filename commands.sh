@@ -24,7 +24,7 @@ rails new .
 #     gem 'pg', :group => :production
 bundle install
 
-# Edit config/routes.rb, uncomment root mapping
+# Edit config/routes.rb, make a root mapping
 vim config/routes.rb
 rake db:create
 
@@ -34,4 +34,4 @@ git commit
 
 heroku apps:create fit-workshop
 heroku addons:add heroku-postgresql:dev
-git push heorku master
+git push heroku master
