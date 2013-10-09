@@ -1,6 +1,6 @@
 gem install bundler
 rails new .
-cat Gemfile
+#     cat Gemfile
 #     source 'https://rubygems.org'
 #     
 #     gem 'bundler', '>=1.3.5'
@@ -20,4 +20,14 @@ cat Gemfile
 #     gem 'unicorn'
 #     
 #     # App-specific gems
+#     ruby '1.9.3'
+#     gem 'pg', :group => :production
 bundle install
+
+# Necessary for heroku
+git add .
+git commit
+
+heroku apps:create fit-workshop
+heroku addons:add heroku-postgresql:dev
+git push heorku master
